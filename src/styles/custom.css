@@ -1,0 +1,32 @@
+:root {
+    --sl-font: 'Ubuntu', serif;
+  }
+
+  .index-header {
+    position: absolute;
+    top: 0; left: 0;
+    background-color: #003344;
+    width: 100%;
+    height: 60vh;
+    z-index: -2;
+    background-image: url('/flowerpower2.png');
+    background-size: cover;
+    filter: blur(16px);
+    opacity: 0.5;
+  }
+
+  .mockups {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .mockups img {
+    border-radius: 12px;
+  }
+
+  @media (min-width: 768px) {
+    .mockups img {
+      border-radius: 64px;
+    }
+  }

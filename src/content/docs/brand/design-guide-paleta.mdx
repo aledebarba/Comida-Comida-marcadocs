@@ -1,0 +1,51 @@
+---
+title: Manual de uso da marca Comida Comida.
+description: Mande o link dessa página para qualquer pessoa que precise usar a marca.
+---
+import { Image } from 'astro:assets';
+import variacoes from "../../../assets/marca/variacoes.svg";
+import paleta from "../../../assets/marca/paleta.png";
+import logotipoDuasCores from "../../../assets/marca/logo-duas-cores.svg";
+import RandomLogo from "../../../components/RandomLogo"
+
+<div style="background-image: linear-gradient(#333, #000); padding: 80px 32px; display: flex; flex-direction: column; gap: 32px; border-radius: 42px; margin: 32px 0px !important;">
+    <Image src={logotipoDuasCores} alt="logotipo preto - padrao" title="logotipo preto - padrao"/>
+</div>
+
+## Liberdade de escolha.
+
+Assim como a marca não tem símbolo, optou-se por não fixar uma paleta de cor, mas sugerir referências e observar regras para a escolha das cores.
+
+Essa liberdade vem da premissa de presença em redes sociais e sua fluidez e variabilidade de temas, formas e "trends". A marca pode adotar cores de acordo com o assunto e contexto.
+
+Porém, deve-se observar:
+
+1. **Legibilidade e Acessibilidade:** 🦄
+   - A escolha de uma paleta de cores contrastantes é fundamental para garantir a legibilidade do conteúdo. Com duas cores contrastantes, podemos criar textos e elementos visuais que são facilmente distinguíveis do fundo, garantindo uma experiência de leitura eficiente.
+2. **Destaque e Foco Visual:**  🦄
+   - Cores contrastantes proporcionam destaque aos elementos importantes. Ao utilizar duas cores vibrantes na marca, conseguimos direcionar a atenção do espectador para o logo e outros elementos visuais cruciais, promovendo a identificação imediata da marca.
+3. **Universalidade:** 🦄
+   - O contraste entre as duas cores principais e o fundo branco ou preto é uma escolha universalmente eficaz. Isso assegura que o design seja impactante independentemente do dispositivo ou contexto de exibição, contribuindo para a consistência visual em diversas plataformas.
+4. **Adaptação a Diferentes Mídias:** 🦄
+   - Uma paleta de cores com alto contraste facilita a adaptação a diferentes mídias e formatos. Seja em impressões, telas de computadores, tablets ou smartphones, as cores contrastantes mantêm sua eficácia, mantendo a integridade visual da marca.
+5. **Branding Distintivo:** 🦄
+   - O uso de duas cores contrastantes cria uma identidade visual forte e memorável. A marca se destaca no mercado, possibilitando uma fácil associação e recordação por parte do público-alvo.
+6. **Estética Apelativa:** 🦄
+   - Cores contrastantes não apenas servem a propósitos práticos, mas também contribuem para uma estética apelativa. A combinação vibrante entre as cores da marca e o fundo cria uma aparência atraente e moderna.
+---
+:::tip[Resumo]
+A adoção de uma paleta de cores com duas tonalidades contrastantes entre si e em relação ao fundo (branco ou preto) não apenas atende a critérios estéticos, mas também desempenha um papel crucial na eficácia do design, na consistência da marca e na acessibilidade para diversos públicos.
+:::
+
+
+## Sugestão inicial
+<Image src={paleta} alt="paleta de cores" />
+
+## Variações Cromáticas
+<div style="transform: scale(0.8); margin-top: -1rem;">
+   <RandomLogo client:load/>
+</div>
+<div style="background-image: linear-gradient(#444, #bbb); padding: 32px; display: flex; flex-direction: column; gap: 32px;">
+    <Image src={variacoes} alt="logotipo preto - padrao" title="logotipo preto - padrao"/>
+    <a href="/public/variacoes.svg" target="blank" style="background-color: #0088dd; color: white; text-align: center; margin: auto; padding: 8px 12px; border-radius: 8px;  text-decoration: none; ">Download SVG</a>
+</div>

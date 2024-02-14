@@ -1,0 +1,34 @@
+---
+title: Comida Comida
+description: Bem vindo ao site de documentação de desenvolvimento e uso da marca Comida-Comida
+template: splash
+hero:
+  tagline: Comida Comida é o delivery moderninho de comida tradição. Nosso whatsapp tem cheiro de cebola fritando. Esse site documenta o processo de desenvolvimento de nossa marca e armazena arquivos para uso da marca de de suas
+  image:
+    file: /public/emoji00003.png
+  actions:
+    - text: Documentação
+      link: /brand/briefing
+      icon: document
+      variant: secondary
+    - text: Saiba mais sobre marcas
+      link: /reference/what-is-a-brand
+      icon: external
+---
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+<div class="index-header"></div>
+<CardGrid stagger>
+	<Card title="A marca" icon="star">
+		Edit `src/content/docs/index.mdx` to see this page change.
+	</Card>
+	<Card title="Aplicações" icon="star">
+		Add Markdown or MDX files to `src/content/docs` to create new pages.
+	</Card>
+	<Card title="Contexto e moodboard" icon="star">
+		Edit your `sidebar` and other config in `astro.config.mjs`.
+	</Card>
+	<Card title="Guia de uso" icon="star">
+		Learn more in [the Starlight Docs](https://starlight.astro.build/).
+	</Card>
+</CardGrid>
