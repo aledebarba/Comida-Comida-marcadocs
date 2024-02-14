@@ -6,7 +6,7 @@ import react from "@astrojs/react";
 
 export default defineConfig({
   site: "https://aledebarba.github.io",
-  base: "/Comida-Comida-marcadocs",
+  //base: "/comida-comida-marcadocs",
   integrations: [
     astroExpressiveCode(),
     starlight({
