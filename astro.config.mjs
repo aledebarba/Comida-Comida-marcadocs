@@ -5,8 +5,6 @@ import starlight from "@astrojs/starlight";
 import react from "@astrojs/react";
 
 export default defineConfig({
-  site: "https://aledebarba.github.io",
-  //base: "/comida-comida-marcadocs",
   integrations: [
     astroExpressiveCode(),
     starlight({
