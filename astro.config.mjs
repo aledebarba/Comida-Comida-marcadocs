@@ -5,6 +5,7 @@ import starlight from "@astrojs/starlight";
 import react from "@astrojs/react";
 
 export default defineConfig({
+  site: 'comida2xmarca.vercel.app',
   integrations: [
     astroExpressiveCode(),
     starlight({

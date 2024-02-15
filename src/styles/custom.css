@@ -1,5 +1,9 @@
 :root {
-    --sl-font: 'Ubuntu', serif;
+    --sl-font: Ubuntu, Seravek, 'Gill Sans Nova', Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
+  }
+
+  body {
+    font-family: Ubuntu, Seravek, 'Gill Sans Nova', Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
   }
 
   .index-header {
