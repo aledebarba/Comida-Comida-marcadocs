@@ -1,0 +1,33 @@
+<div class="not-ready-yet">
+    <p>Este conteúdo está em fase de produção.</p>
+    <div>
+        <slot/>
+    </div>
+</div>
+
+<style>
+
+    .not-ready-yet {
+        position: relative;
+    }
+    .not-ready-yet div {
+        opacity: 0.5;
+        filter: blur(5px);
+    }
+
+    .not-ready-yet p {
+        position: relative;
+        top: 10vh;
+        color: red;
+        font-size: 1.5rem;
+        font-weight: bolder;
+        z-index: 10;
+        background-color: #000a;
+        padding: 1rem;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        border-radius: 8px;
+        border: 3px dotted red;
+        opacity: 0.8;
+    }
+</style>

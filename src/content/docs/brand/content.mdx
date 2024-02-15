@@ -1,0 +1,45 @@
+---
+title: Conteúdo.
+tableOfContents: false
+---
+import GlowCard from "../../../components/GlowCard.astro";
+import { Image } from 'astro:assets';
+
+
+<div style="display: flex; gap: 16px; flex-wrap: wrap;">
+
+   <GlowCard title="Briefing" href="/brand/briefing/">
+      Informações da empresa e questões que ajudaram a desenvolver a identidade visual.
+      <img src="https://images.unsplash.com/photo-1512314889357-e157c22f938d?w=350&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bm90ZXN8ZW58MHx8MHx8fDA%3D" alt="mascote" style="border-radius: 8px; margin: auto;"/>
+   </GlowCard>
+
+   <GlowCard title="Mood Board" href="/brand/idv/">
+      Contexto e imagens que moldaram o conceito da marca.
+      <img src="https://images.pexels.com/photos/17789974/pexels-photo-17789974/free-photo-of-a-pile-of-papers-with-various-items-on-top.jpeg?auto=compress&cs=tinysrgb&w=600" alt="mascote" style="border-radius: 8px; position: relative; bottom: -16px;"/>
+   </GlowCard>
+
+   <GlowCard title="A marca" href="/brand/brand/">
+      <Image src="/logo-duas-cores.svg" alt="mascote" width="1000" height="20"/>
+      Apresentação padrão da marca, formas de apresentar e considerações sobre seu uso
+   </GlowCard>
+
+   <GlowCard title="Guia de uso" href="/brand/design-guide/">
+      Direção e sugestões de uso da marca. Aqui você vai encontrar informações importante de como a marca deve ou não ser usada, como usar cores com a identidade visual e links para downloads.
+   </GlowCard>
+
+   <GlowCard title="Mascotes" href="/brand/design-guide-mascotes/">
+      <div style="display: flex; justify-content: space-between; gap: 4px;">
+         <img src="/emoji00001.png" alt="mascote" style="width: 20%;"/>
+         <img src="/emoji00003.png" alt="mascote" style="width: 20%;"/>
+         <img src="/emoji00002.png" alt="mascote" style="width: 20%;"/>
+         <img src="/emoji00004.png" alt="mascote" style="width: 20%;"/>
+      </div>
+      Elementos de apoio visual desenvolvidos para a marca. Guia de uso.
+   </GlowCard>
+
+   <GlowCard title="Mockups - Aplicações" href="/brand/design-guide-aplicacoes/">
+      <Image src="/Image0003.png" alt="mascote" width="1000" height="20"style="border-radius: 16px;"/>
+      Exemplos visuais de uso da marca.
+   </GlowCard>
+
+</div>

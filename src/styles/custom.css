@@ -9,7 +9,7 @@
     width: 100%;
     height: 60vh;
     z-index: -2;
-    background-image: url('/Comida-Comida-marcadocs/flowerpower2.png');
+    background-image: url('/flowerpower2.png');
     background-size: cover;
     filter: blur(16px);
     opacity: 0.5;
@@ -29,4 +29,22 @@
     .mockups img {
       border-radius: 64px;
     }
+  }
+
+@keyframes float {
+    0% {
+      transform: translatey(0px);
+    }
+    50% {
+      transform: translatey(-20px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
+  }
+
+  .hero img {
+    animation: float 3s ease-in-out infinite;
+    box-shadow: 0 0 0 0;
+    filter: drop-shadow(0 0 0 #0000);
   }

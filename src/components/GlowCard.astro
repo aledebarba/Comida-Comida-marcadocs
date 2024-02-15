@@ -1,0 +1,109 @@
+---
+const { color, title, href } = Astro.props;
+---
+{
+href && <a href={href} class="cardLink">
+    <div class="glow">
+        <p class="title">{title}</p>
+        <div class="body">
+            <slot/>
+        </div>
+        <div class="icon"></div>
+    </div>
+</a>
+}
+{
+    !href && <div class="glow">
+            <p class="title">{title}</p>
+            <div class="body">
+                <slot/>
+            </div>
+            <div class="icon"></div>
+        </div>
+}
+
+<style define:vars={{ color }}>
+
+    @property --middle {
+        syntax: '<number>'; /* <- defined as type number for the transition to work */
+        initial-value: 15;
+        inherits: false;
+    }
+
+    @keyframes gradient {
+        100% { --middle: 85 }
+    }
+
+    a.cardLink {
+        position: relative;
+        top: 8px;
+        min-width: 33%;
+        transition: color 0.3s linear;
+    }
+
+    @media(min-width: 640px) {
+        a.cardLink {
+            position: inherit;
+            top: 8px;
+            max-width: 45%;
+            transition: color 0.3s linear;
+        }
+    }
+
+    .title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        border-bottom: 1px solid #fff4;
+    }
+
+    .icon {
+        position: absolute;
+        right: 16px;
+        top: -4px;
+        width: 40px;
+        height: 40px;
+    }
+    .icon::after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate( -50%, -50%);
+        content: "🔅";
+        font-size: 2rem;
+    }
+
+
+    .glow {
+        --anim: gradient 1s infinite ease-in-out alternate;
+        position: relative;
+        padding: 1rem;
+        display: inline-block;
+        border-radius: 0.5rem;
+        height: 100%;
+    }
+
+    .glow::before {
+        content: "";
+        position: absolute;
+        top: 0; left: 0;
+        right: 0; bottom: 0;
+        background-color: black;
+        border-radius: 0.5rem;
+        z-index: -1;
+        background-color: #000000;
+    }
+
+    .glow::after {
+        content: "";
+        position: absolute;
+        top: 0px; left: 0px;
+        right: 0px; bottom: 0px;
+        border: 1px solid pink;
+        background-image: linear-gradient(tomato, rgb(255, 234, 1) calc( var(--middle) * 1%), coral );
+        filter: blur(6px);
+        opacity: 0.8;
+        z-index: -2;
+        animation: var(--anim);
+    }
+
+</style>

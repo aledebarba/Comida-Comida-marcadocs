@@ -26,6 +26,9 @@ export default defineConfig({
             items: [
             // Each item here is one entry in the navigation menu.
             {
+              label: "Conteúdo",
+              link: "/brand/content/"
+            }, {
               label: "Briefing",
               link: "/brand/briefing/"
             }, {
