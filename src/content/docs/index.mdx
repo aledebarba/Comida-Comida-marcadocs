@@ -5,30 +5,18 @@ template: splash
 hero:
   tagline: Comida Comida é o delivery moderninho de comida tradição. Nosso whatsapp tem cheiro de cebola fritando. Esse site documenta o processo de desenvolvimento de nossa marca e armazena arquivos para uso da marca de de suas
   image:
-    file: /src/assets/mascotes/400h/emoji00003.png
+    file: /src/assets/ilustracao/400h/Asset21.png
   actions:
-    - text: Documentação
-      link: /brand/briefing
+    - text: Conheça a marca
+      link: /brand/content
       icon: document
-      variant: secondary
-    - text: Saiba mais sobre marcas
+      variant: primary
+    - text: Info extra sobre marcas
       link: /reference/what-is-a-brand
       icon: external
 ---
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { Image } from 'astro:assets';
+import frontImage from "../../assets/mascotes/400h/emoji00003.png"
 
 <div class="index-header"></div>
-<CardGrid stagger>
-	<Card title="A marca" icon="star">
-		Edit `src/content/docs/index.mdx` to see this page change.
-	</Card>
-	<Card title="Aplicações" icon="star">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Contexto e moodboard" icon="star">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Guia de uso" icon="star">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
-</CardGrid>
+<Image src={frontImage} alt="ilustração comida comida" style="margin:auto; padding: 25vh 2vw;" />
