@@ -17,6 +17,9 @@ hero:
 ---
 import { Image } from 'astro:assets';
 import frontImage from "../../assets/mascotes/400h/emoji00003.png"
+import WithLenis from '../../components/WithLenis.astro';
 
-<div class="index-header"></div>
-<Image src={frontImage} alt="ilustração comida comida" style="margin:auto; padding: 25vh 2vw;" />
+<WithLenis>
+  <div class="index-header"></div>
+  <Image src={frontImage} alt="ilustração comida comida" style="margin:auto; padding: 25vh 2vw;" />
+</WithLenis>

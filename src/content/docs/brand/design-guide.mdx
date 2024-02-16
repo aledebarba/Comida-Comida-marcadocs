@@ -10,7 +10,9 @@ import logotipoDuotone from "../../../assets/marca/logo-duotone.svg";
 import logotipoDuasCores from "../../../assets/marca/logo-duas-cores.svg";
 import formas from "../../../assets/marca/formas.svg";
 import variacoes from "../../../assets/marca/variacoes.svg";
+import WithLenis from '../../../components/WithLenis.astro';
 
+<WithLenis>
 ## Logotipo em preto - forma padrão
 <div style="background-image: linear-gradient(white, #fffffb); padding: 32px; display: flex; flex-direction: column; gap: 32px;">
     <Image src={logotipoPreto} alt="logotipo preto - padrao" title="logotipo preto - padrao"/>
@@ -53,4 +55,4 @@ Apresentação da marca colorida (veja a seção Paleta)
 <div style="background-image: linear-gradient(#444, #bbb); padding: 32px; display: flex; flex-direction: column; gap: 32px;">
     <Image src={variacoes} alt="logotipo preto - padrao" title="logotipo preto - padrao"/>
     <a href="/public/variacoes.svg" target="blank" style="background-color: #0088dd; color: white; text-align: center; margin: auto; padding: 8px 12px; border-radius: 8px;  text-decoration: none; ">Download SVG</a>
-</div>
+</div></WithLenis>

@@ -7,7 +7,9 @@ import variacoes from "../../../assets/marca/variacoes.svg";
 import paleta from "../../../assets/marca/paleta.png";
 import logotipoDuasCores from "../../../assets/marca/logo-duas-cores.svg";
 import RandomLogo from "../../../components/RandomLogo"
+import WithLenis from '../../../components/WithLenis.astro';
 
+<WithLenis>
 <div style="background-image: linear-gradient(#333, #000); padding: 80px 32px; display: flex; flex-direction: column; gap: 32px; border-radius: 42px; margin: 32px 0px !important;">
     <Image src={logotipoDuasCores} alt="logotipo preto - padrao" title="logotipo preto - padrao"/>
 </div>
@@ -48,4 +50,4 @@ A adoção de uma paleta de cores com duas tonalidades contrastantes entre si e 
 <div style="background-image: linear-gradient(#444, #bbb); padding: 32px; display: flex; flex-direction: column; gap: 32px;">
     <Image src={variacoes} alt="logotipo preto - padrao" title="logotipo preto - padrao"/>
     <a href="/public/variacoes.svg" target="blank" style="background-color: #0088dd; color: white; text-align: center; margin: auto; padding: 8px 12px; border-radius: 8px;  text-decoration: none; ">Download SVG</a>
-</div>
+</div></WithLenis>

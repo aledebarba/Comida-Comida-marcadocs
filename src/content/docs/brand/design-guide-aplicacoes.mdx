@@ -3,7 +3,7 @@ title: Manual de uso da marca Comida Comida.
 description: Mande o link dessa página para qualquer pessoa que precise usar a marca.
 ---
 import { Image } from 'astro:assets';
-
+import WithLenis from '../../../components/WithLenis.astro';
 import mock1 from "../../../assets/marca/image-bags-header.jpg";
 import mock2 from "../../../assets/marca/Image0000.jpg";
 import mock3 from "../../../assets/marca/Image0002.jpg";
@@ -11,6 +11,7 @@ import mock4 from "../../../assets/marca/Image0003.jpg";
 import mock5 from "../../../assets/marca/Image0004.jpg";
 import mock6 from "../../../assets/marca/Image0006.jpg";
 
+<WithLenis>
 <div class="mockups">
     <Image src={mock1} alt="Sacolas e container de comida sobre uma mesa" width="1200" height="675"/>
     <Image src={mock2} alt="Sacolas e container de comida sobre uma mesa" width="1200" height="675"/>
@@ -18,4 +19,4 @@ import mock6 from "../../../assets/marca/Image0006.jpg";
     <Image src={mock4} alt="Sacolas e container de comida sobre uma mesa" width="1200" height="675"/>
     <Image src={mock5} alt="Sacolas e container de comida sobre uma mesa" width="1200" height="675"/>
     <Image src={mock6} alt="Sacolas e container de comida sobre uma mesa" width="1200" height="675"/>
-</div>
+</div></WithLenis>

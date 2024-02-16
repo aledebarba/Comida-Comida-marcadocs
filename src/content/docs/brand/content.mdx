@@ -4,8 +4,9 @@ tableOfContents: false
 ---
 import GlowCard from "../../../components/GlowCard.astro";
 import { Image } from 'astro:assets';
+import WithLenis from '../../../components/WithLenis.astro';
 
-
+<WithLenis>
 <div style="display: flex; gap: 16px; flex-wrap: wrap;">
 
    <GlowCard title="Briefing" href="/brand/briefing/">
@@ -43,3 +44,4 @@ import { Image } from 'astro:assets';
    </GlowCard>
 
 </div>
+</WithLenis>

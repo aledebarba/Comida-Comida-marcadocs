@@ -14,12 +14,18 @@ dependencies:
   '@astrojs/react':
     specifier: ^3.0.10
     version: 3.0.10(@types/react-dom@18.2.19)(@types/react@18.2.55)(react-dom@18.2.0)(react@18.2.0)(vite@5.1.1)
+  '@astrojs/sitemap':
+    specifier: ^3.0.5
+    version: 3.0.5
   '@astrojs/starlight':
     specifier: ^0.17.3
     version: 0.17.4(astro@4.3.7)
   '@fontsource/ubuntu':
     specifier: ^5.0.8
     version: 5.0.8
+  '@studio-freight/lenis':
+    specifier: ^1.0.35
+    version: 1.0.35
   '@types/react':
     specifier: ^18.2.55
     version: 18.2.55
@@ -971,6 +977,10 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
+
+  /@studio-freight/lenis@1.0.35:
+    resolution: {integrity: sha512-dduQqZERC5EaJSVGBoCt2WdPFQlr39zFewkQxvJcYZrMl1aVTPPIQCnZMqIjl4KZBQIL3kIXes+HP22T9XVh4w==}
+    dev: false
 
   /@types/acorn@4.0.6:
     resolution: {integrity: sha512-veQTnWP+1D/xbxVrPC3zHnCZRjSrKfhbMUlEA43iMZLu7EsnTtkJklIuwrCPbOi8YkvDQAiW05VQQFvvz9oieQ==}

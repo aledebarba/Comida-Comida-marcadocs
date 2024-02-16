@@ -2,6 +2,7 @@
 title: A marca Comida-Comida
 description: Apresentação formal.
 ---
+import WithLenis from '../../../components/WithLenis.astro';
 import { Image } from 'astro:assets';
 import tagline1 from "../../../assets/other/tagline00001.svg";
 import tagline2 from "../../../assets/other/tagline00002.svg";
@@ -26,7 +27,9 @@ import fontType1 from "../../../assets/other/type.svg";
 import fontType2 from "../../../assets/other/type2.svg";
 import logotipoDuasCores from "../../../assets/marca/logo-duas-cores.svg";
 
-# Logotipo
+
+<WithLenis>
+## Logotipo
 
 A marca Comida Comida é principalmente baseada na expressão linguística que significa:
 
@@ -84,8 +87,5 @@ Para além dos emojis de domínio público, emojis customizados são um luxo pop
     <Image src={emoji8} alt="emoji customizado" height="136"/>
     <Image src={emoji9} alt="emoji customizado" height="136"/>
     <Image src={emoji10} alt="emoji customizado" height="136"/>
-</div>
-
-# Aplicações
-* Imagens de aplicação
+</div></WithLenis>
 

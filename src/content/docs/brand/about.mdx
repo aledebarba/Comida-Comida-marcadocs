@@ -2,7 +2,7 @@
 title: Direito autoral e cessão de uso da marca.
 description: Autoria, direitos de uso e contatos.
 ---
-
+import WithLenis from '../../../components/WithLenis.astro';
 export const contract = {
     owner: "Neudja Cordeiro",
     pronoums: "Sra",
@@ -17,6 +17,7 @@ export const contract = {
     lawUrl: "https://thelaw.com.br",
 };
 
+<WithLenis>
 ### Direito Autoral de uma Marca:
 O direito autoral de uma marca refere-se à proteção legal conferida aos elementos distintivos que compõem a identidade visual e reconhecimento de uma marca. No Brasil, a legislação de propriedade intelectual, em especial a <a href={contract.lawUrl} target="blank">Lei nº 9.610/1998</a>, resguarda os direitos autorais de criações intelectuais, incluindo marcas registradas. Esse conjunto de direitos abrange a exclusividade de uso, reprodução, distribuição e comercialização da marca por seu titular.
 
@@ -40,3 +41,4 @@ Para outras decisões, alterações, expansões de uso geográfico (exceto para 
 > site: <a href="{ contract.author.url }">ByteMy.Dev</a><br/>
 > email: <a href="mailto:{ contract.autohor.email }">ale@alemacedo.com</a>
 
+</WithLenis>
