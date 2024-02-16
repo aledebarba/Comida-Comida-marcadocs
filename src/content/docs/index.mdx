@@ -7,21 +7,18 @@ hero:
   image:
     file: /src/assets/ilustracao/400h/Asset21.png
   actions:
-    - text: Conheça a marca
+    - text: Conheça a Marca Comida Comida
       link: /brand/content
       icon: document
       variant: primary
-    - text: Info extra sobre marcas
-      link: /reference/what-is-a-brand
-      icon: external
 ---
 import { Image } from 'astro:assets';
-import frontImage from "../../assets/mascotes/400h/emoji00003.png"
-import WithLenis from '../../components/WithLenis.astro';
+import frontImage from "@assets/mascotes/400h/emoji00003.png"
+import WithLenis from '@components/WithLenis.astro';
+import PostList from '@components/PostList.astro';
 
 <WithLenis>
   <div class="index-header"></div>
-  <a href="/brand/content/">
-    <Image src={frontImage} alt="ilustração comida comida" style="margin:auto; padding: 25vh 2vw;" />
-  </a>
+  <small>ultimas atualizações</small>
+  <PostList/>
 </WithLenis>

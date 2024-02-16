@@ -1,0 +1,130 @@
+---
+const posts = await Astro.glob("../content/docs/brand/*.mdx");
+posts.sort((b, a) => {
+  const dateA = Date.parse(a.frontmatter.lastModified);
+  const dateB = Date.parse(b.frontmatter.lastModified);
+  return dateB - dateA;
+});
+---
+
+<div class="post-list">
+    {
+        posts.map((post) => {
+
+            const routerUrl = (url:string) => url.replace("src/content/docs", "").replace(".mdx","");
+            const data: Date = new Date(post.frontmatter.lastModified );
+            const options: Intl.DateTimeFormatOptions = {
+                day: 'numeric',
+                month: 'long',
+                year: 'numeric',
+                hour: 'numeric',
+                hourCycle: "h24",
+                minute: 'numeric',
+                //timeZoneName: 'short'
+            };
+            const formattedDate: string = new Intl.DateTimeFormat('pt-BR', options).format(data);
+
+            return (
+                <a class="post-link" href={post.url ? routerUrl(post.url) : "/" }>
+                    <div class="post-item">
+                        <p class="date">{formattedDate}</p>
+                        <p class="title">{post.frontmatter.title}</p>
+                        <p class="desc">{post.frontmatter.description}</p>
+                    </div>
+                </a>
+            );
+        })
+    }
+</div>
+
+<style>
+
+
+    .post-list {
+        --transition: all 300ms ease-in-out;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row: 1fr;
+        grid-auto-flow: row;
+        gap: 2rem;
+
+        @media (min-width: 640px) {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        display: block;
+        position: relative;
+        transition: var(--transition);
+
+        &:hover {
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+
+        .post-item {
+
+            position: relative;
+            background-color: #000000aa;
+            border-radius: 16px;
+            padding: 2rem 2rem 2.5rem 2rem;
+            transition: var(--transition);
+            box-shadow: 2px 2px 16px 2px #0008;
+            margin-top: 1rem;
+
+            &:hover {
+                background-color: #000;
+                transition: var(--transition);
+                transform: scale(1.01);
+            }
+
+            .date {
+                position: absolute;
+                left: 2rem;
+                top: -0.8rem;
+                font-size: 1rem;
+                font-weight: bolder;
+                line-height: 1;
+                margin-bottom: 2rem;
+                background-color: #bc8f8f88;
+                padding: 8px;
+                border-radius: 4px;
+                display: inline-block;
+                color: black;
+                transition: var(--transition);
+
+                &:hover {
+                    color: #fffb;
+                    transition: var(--transition);
+                }
+
+            }
+            .title {
+                position: relative;
+                margin-top: 1rem;
+                font-size: 1.5rem;
+                line-height: 1.1;
+                text-transform: uppercase;
+                letter-spacing: 0.8px;
+                text-align: left;
+            }
+            .desc {
+                font-family: 'Courier New', Courier, monospace;
+                font-weight: bold;
+                margin-top: 2rem;
+                padding-right: 2vw;
+                color: rosybrown;
+
+                @media (min-width: 640px) {
+                    grid-template-columns: 1fr 1fr;
+                    padding-right: 8vw;
+                }
+            }
+
+            .post-link {}
+        }
+    }
+</style>

@@ -1,6 +1,3 @@
----
-const { layout } = Astro.props;
----
 <div class="collapsable__grid">
     <slot />
 </div>
@@ -16,12 +13,17 @@ const { layout } = Astro.props;
         details {
             position: relative;
             background-color: rgb(60, 64, 69);
-            padding: 0.8rem;
             border-radius: 8px;
             cursor: pointer;
             font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            padding: 1rem;
+            margin: 0;
+
             &:hover {
-                background-color: rgb(80, 93, 106);
+                background-color: rgb(40, 48, 56);
             }
 
             summary {
@@ -29,7 +31,29 @@ const { layout } = Astro.props;
                 line-height: 1.2;
                 font-size: 1.2rem;
                 font-weight: normal;
+            }
 
+            blockquote {
+                position: relative;
+                padding: 0;
+                margin: 0.5rem 1rem 1rem 1.5rem;
+
+                &:first-of-type {
+                    margin-top: 2rem;
+                }
+
+                p {
+                    position: relative;
+                    line-height: 1.1;
+                    margin: 0;
+                    padding: 0;
+
+                    &::before {
+                        position: absolute;
+                        content: "🔅";
+                        transform: translateX(-1.4rem);
+                    }
+                }
             }
         }
 
