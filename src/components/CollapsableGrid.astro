@@ -1,0 +1,38 @@
+---
+const { layout } = Astro.props;
+---
+<div class="collapsable__grid">
+    <slot />
+</div>
+
+<style>
+    .collapsable__grid {
+        position: relative;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        details {
+            position: relative;
+            background-color: rgb(60, 64, 69);
+            padding: 0.8rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            &:hover {
+                background-color: rgb(80, 93, 106);
+            }
+
+            summary {
+                color: white;
+                line-height: 1.2;
+                font-size: 1.2rem;
+                font-weight: normal;
+
+            }
+        }
+
+
+    }
+</style>

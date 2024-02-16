@@ -2,74 +2,114 @@
 title: Manual de uso da marca Comida Comida.
 description: Mande o link dessa página para qualquer pessoa que precise usar a marca.
 ---
-import { Image } from 'astro:assets';
-import logotipoPreto from "../../../assets/marca/logo-preto.svg";
-import logotipoBranco from "../../../assets/marca/logo-branco.svg";
-import logotipoMono from "../../../assets/marca/logo-mono.svg";
-import logotipoDuotone from "../../../assets/marca/logo-duotone.svg";
-import logotipoDuasCores from "../../../assets/marca/logo-duas-cores.svg";
-import formas from "../../../assets/marca/formas.svg";
-import variacoes from "../../../assets/marca/variacoes.svg";
 import WithLenis from '../../../components/WithLenis.astro';
+import ImageGrid from '../../../components/ImageGrid.astro';
+import CollapsableGrid from '../../../components/CollapsableGrid.astro';
 
 <WithLenis>
-## Logotipo
 
-A marca Comida Comida é principalmente baseada na expressão linguística que significa:
+    ### Mascotes e personagens
+    A presença de mascotes e personagens em identidades visuais de empresas, especialmente em organizações de pequeno porte, pode oferecer uma série de benefícios significativos para a comunicação com o público. Aqui estão alguns tópicos relevantes:
 
-* comida farta
-* comida de verdade
-* comida forte
-* comida que sustenta
-* comida substanciosa
-* comida para encher a barriga
+    <ImageGrid layout="mansory">
+        <img src="/mascotes/emoji00003.png" alt="mascote" />
+        <img src="/mascotes/emoji00005.png" alt="mascote" />
+        <img src="/mascotes/emoji00002.png" alt="mascote" />
+        <img src="/mascotes/emoji00001.png" alt="mascote" />
+        <img src="/mascotes/emoji00004.png" alt="mascote" />
+        <img src="/mascotes/emoji00006.png" alt="mascote" />
+        <img src="/mascotes/emoji00007.png" alt="mascote" />
+        <img src="/mascotes/emoji00008.png" alt="mascote" />
+        <img src="/mascotes/emoji00009.png" alt="mascote" />
+        <img src="/mascotes/emoji00010.png" alt="mascote" />
+    </ImageGrid>
 
-Optou-se por apresentar a própria expressão, de forma bem humorada e mimetizando em formas a entonação da expressão, com a primeira palavra pronunciada de forma mais abreviada e com o "i" curto, e a segunda palavra com pronúncia mais alongada e o "i" duplo.
+    ### Etiquetas de fechamento
 
-**Portanto**, a marca é um <span style="text-decoration:underline; font-weight: bolder; font-size: 1.1rem;">logotipo</span>, *quali-signo / ícone* na apresentação exclusiva das palavras, *sin-signo / índice* em representação do fonema/som que representa a comida com  as características presumidas, e é *legi-signo / símbolo* pois a interpretação do significado é individualizada.
+    <img src="/mascotes/adesivos00005.png" alt="mascote" style="height: 40vh; width: auto; margin: 32px auto;" />
+    <img src="/mascotes/adesivos00006.png" alt="mascote" style="height: 40vh; width: auto; margin: 32px auto;" />
 
+    ### Colecionáveis (imãs de geladeira)
+    <ImageGrid>
+        <img src="/mascotes/adesivos00001.png" alt="mascote" />
+        <img src="/mascotes/adesivos00002.png" alt="mascote" />
+        <img src="/mascotes/adesivos00003.png" alt="mascote" />
+    </ImageGrid>
 
-## Logotipo em preto - forma padrão
-<div style="background-image: linear-gradient(white, #fffffb); padding: 32px; display: flex; flex-direction: column; gap: 32px;">
-    <Image src={logotipoPreto} alt="logotipo preto - padrao" title="logotipo preto - padrao"/>
-    <a href="/public/logo-preto.svg" target="blank" style="background-color: #0088dd; color: white; text-align: center; margin: auto; padding: 8px 12px; border-radius: 8px;  text-decoration: none; ">Download SVG</a>
-</div>
+    <img src="/mascotes/adesivos00004.png" alt="mascote" style="margin: 56px auto;"/>
 
-## Logotipo em branco
-<div style="background-image: linear-gradient(#000, #111); padding: 32px; display: flex; flex-direction: column; gap: 32px;">
-    <Image src={logotipoBranco} alt="logotipo preto - padrao" title="logotipo preto - padrao"/>
-    <a href="/public/logo-branco.svg" target="blank" style="background-color: #0088dd; color: white; text-align: center; margin: auto; padding: 8px 12px; border-radius: 8px;  text-decoration: none; ">Download SVG</a>
-</div>
+    ### Informações complementares sobre Mascotes e Personagens
 
-## Logotipo em uma cor
-<div style="background-image: linear-gradient(#eee, #eee); padding: 32px; display: flex; flex-direction: column; gap: 32px;">
-    <Image src={logotipoMono} alt="logotipo preto - padrao" title="logotipo preto - padrao"/>
-    <a href="/public/logo-mono.svg" target="blank" style="background-color: #0088dd; color: white; text-align: center; margin: auto; padding: 8px 12px; border-radius: 8px;  text-decoration: none; ">Download SVG</a>
-</div>
+    <CollapsableGrid style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 16px;">
+        <details>
+        <summary>**Identificação e Memorabilidade**</summary>
 
-## Logotipo em duotone
-<div style="background-image: linear-gradient(#eee, #eee); padding: 32px; display: flex; flex-direction: column; gap: 32px;">
-    <Image src={logotipoDuotone} alt="logotipo preto - padrao" title="logotipo preto - padrao"/>
-    <a href="/public/logo-duotone.svg" target="blank" style="background-color: #0088dd; color: white; text-align: center; margin: auto; padding: 8px 12px; border-radius: 8px;  text-decoration: none; ">Download SVG</a>
-</div>
+        - Reforçam a identidade da empres, tornando-a mais facilmente reconhecível pelo público.
+        - A presença de um mascote carismático pode ajudar os clientes a lembrar-se da marca com mais facilidade.
+        </details>
 
-## Logotipo em duas cores
-<div style="background-image: linear-gradient(#eee, #eee); padding: 32px; display: flex; flex-direction: column; gap: 32px;">
-    <Image src={logotipoDuasCores} alt="logotipo preto - padrao" title="logotipo preto - padrao"/>
-    <a href="/public/logo-duas-cores.svg" target="blank" style="background-color: #0088dd; color: white; text-align: center; margin: auto; padding: 8px 12px; border-radius: 8px;  text-decoration: none; ">Download SVG</a>
-</div>
+        <details>
+        <summary>**Humanização da Marca**</summary>
 
-## Logotipo eontainers
-Apresentação da marca dentro de formas básicas, padrões sugeridos
-<div style="background-image: linear-gradient(#444, #bbb); padding: 32px; display: flex; flex-direction: column; gap: 32px;">
-    <Image src={formas} alt="logotipo preto - padrao" title="logotipo preto - padrao"/>
-    <a href="/public/formas.svg" target="blank" style="background-color: #0088dd; color: white; text-align: center; margin: auto; padding: 8px 12px; border-radius: 8px;  text-decoration: none; ">Download SVG</a>
-</div>
+        - Mascotes proporcionam uma dimensão humana à empresa, estabelecendo uma conexão emocional com os clientes.
+        - Personagens simpáticos podem criar empatia e uma relação mais próxima entre a marca e seu público.
+        </details>
 
-## Logotipo eariação Cromática
-Apresentação da marca dentro de formas básicas, padrões sugeridos
-<div style="background-image: linear-gradient(#444, #bbb); padding: 32px; display: flex; flex-direction: column; gap: 32px;">
-    <Image src={variacoes} alt="logotipo preto - padrao" title="logotipo preto - padrao"/>
-    <a href="/public/variacoes.svg" target="blank" style="background-color: #0088dd; color: white; text-align: center; margin: auto; padding: 8px 12px; border-radius: 8px;  text-decoration: none; ">Download SVG</a>
-</div>
+        <details>
+        <summary>**Comunicação Lúdica e Divertida**</summary>
+
+        - Mascotes e personagens adicionam um toque de diversão à comunicação da empresa, tornando-a mais leve e acessível.
+        - Elementos lúdicos podem contribuir para uma experiência mais agradável e positiva para os consumidores.
+        </details>
+
+        <details>
+        <summary>**Diferenciação da Concorrência**</summary>
+
+        - Mascotes exclusivos e personagens distintos podem destacar a empresa em um mercado saturado, diferenciando-a da concorrência.
+        - A originalidade na escolha do mascote pode ser um fator de destaque para uma empresa de pequeno porte.
+        </details>
+
+        <details>
+        <summary>**Comunicação Visual Forte**</summary>
+
+        - Mascotes geralmente possuem características visuais marcantes, contribuindo para uma comunicação visual forte e consistente.
+        - A estética única do mascote pode ser incorporada em vários elementos visuais da marca, como logotipos, embalagens e materiais promocionais.
+        </details>
+
+        <details>
+        <summary>**Facilidade de Adaptação**</summary>
+
+        - Mascotes são flexíveis e podem ser adaptados para diferentes campanhas e eventos, mantendo a consistência da marca.
+        - A versatilidade dos personagens permite sua utilização em diversas plataformas, como redes sociais, embalagens e campanhas publicitárias.
+        </details>
+
+        <details>
+        <summary>**Acessibilidade à Diversidade**</summary>
+
+        - Mascotes podem ser criados de maneira inclusiva, representando a diversidade e promovendo valores importantes para a empresa.
+        - A representação inclusiva pode atrair diferentes segmentos de público, fortalecendo a base de clientes.
+        </details>
+
+        <details>
+        <summary>**Contação de Histórias**</summary>
+
+        - Mascotes podem ser incorporados a narrativas e histórias que ajudam a transmitir os valores e a missão da empresa.
+        - A capacidade de contar histórias pode envolver os clientes de uma forma mais profunda e criar uma conexão emocional duradoura.
+        </details>
+
+        <details>
+        <summary>**Engajamento nas Redes Sociais**</summary>
+
+        - Mascotes podem ser utilizados de maneira eficaz nas redes sociais, estimulando o engajamento dos seguidores.
+        - Publicações com personagens carismáticos tendem a receber maior interação, compartilhamento e comentários.
+        </details>
+
+        <details>
+        <summary>**Efeito Duradouro**</summary>
+
+        - Mascotes bem projetados têm o potencial de se tornarem ícones duradouros, associados à marca ao longo do tempo.
+        - A consistência na presença do mascote contribui para a construção de uma identidade de marca sólida e duradoura.
+        </details>
+    </CollapsableGrid>
+
 </WithLenis>
