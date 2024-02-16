@@ -17,9 +17,11 @@ const { layout } = Astro.props;
 
         img {
             position: relative;
-            width: 80%;
             height: 100%;
+            width: auto;
             object-fit: contain;
+            grid-row: auto / span 1;
+            grid-column: auto / span 1;
 
             &:first-child {
                 top: 8px;
